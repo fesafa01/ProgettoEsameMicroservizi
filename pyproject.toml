@@ -1,0 +1,47 @@
+[project]
+name = "microservice-template"
+version = "0.1.0"
+description = "A template for implementing python microservices"
+authors = [
+    {name = "Giordano Pescetelli"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi (>=0.121.3,<0.122.0)",
+    "pre-commit (>=4.4.0,<5.0.0)",
+    "opentelemetry-api (>=1.38.0,<2.0.0)",
+    "opentelemetry-sdk (>=1.38.0,<2.0.0)",
+    "opentelemetry-exporter-otlp-proto-http (>=1.38.0,<2.0.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "opentelemetry-instrumentation-fastapi (>=0.59b0,<0.60)",
+    "opentelemetry-instrumentation-httpx (>=0.59b0,<0.60)",
+    "prometheus-fastapi-instrumentator (>=7.1.0,<8.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode=false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["init-ws.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "D"]
+ignore = []
+
+[tool.ruff.lint.per-file-ignores]
+"test_*.py" = ["D101", "D103"]
+"tests/**.py" = ["D101", "D103"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
