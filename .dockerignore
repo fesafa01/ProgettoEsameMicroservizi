@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Pre-commit
+.pre-commit-config.yaml
+
+# Documentation
+*.md
+!README.md
+
+# Environment files
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+init-ws.py
+poetry.lock
+
+# Claude Code
+.claude/
+.claude/settings.local.json
+CLAUDE.md
+
+# Codex
+.codex-venv
