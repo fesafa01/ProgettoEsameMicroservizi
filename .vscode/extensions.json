@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "charliermarsh.ruff",
+    "njpwerner.autodocstring",
+    "be5invis.toml",
+    "fill-labs.dependi",
+    "ms-python.debugpy",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "littlefoxteam.vscode-python-test-adapter",
+    "KevinRose.vsc-python-indent",
+    "astral-sh.ty"
+  ]
+}
