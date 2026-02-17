@@ -1,0 +1,9 @@
+services:
+  knowledge-validator:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - GROQ_API_KEY=chive
+    volumes:
+      - ./data:/app/data

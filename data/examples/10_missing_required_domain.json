@@ -1,0 +1,31 @@
+{
+  "knowledge_base_id": "kb-demo",
+  "snapshot_id": "kb-demo-2026-02-16-010",
+  "reference_version": "v1",
+  "created_at": "2026-02-16T10:30:00",
+  "source_docs": [
+    {
+      "id": "doc-1",
+      "title": "Policy Manual v2",
+      "date": "2025-06-10",
+      "version": "2.0"
+    }
+  ],
+  "entities": [
+    {
+      "id": "ent-090",
+      "name": "Data Retention Policy",
+      "domain": "policy",
+      "facts": [
+        "Retention is 24 months"
+      ],
+      "reliability": 0.91,
+      "provenance": [
+        "doc-1"
+      ],
+      "updated_at": "2025-06-10",
+      "status": "active"
+    }
+  ],
+  "relations": []
+}

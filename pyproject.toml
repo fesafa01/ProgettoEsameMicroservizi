@@ -1,7 +1,7 @@
 [project]
-name = "microservice-template"
+name = "knowledge-validator"
 version = "0.1.0"
-description = "A template for implementing python microservices"
+description = "Knowledge Validator (Agent 2) for a multi-agent knowledge pipeline"
 authors = [
     {name = "Giordano Pescetelli"}
 ]
@@ -20,7 +20,8 @@ dependencies = [
     "httpx (>=0.28.1,<0.29.0)",
     "opentelemetry-instrumentation-fastapi (>=0.59b0,<0.60)",
     "opentelemetry-instrumentation-httpx (>=0.59b0,<0.60)",
-    "prometheus-fastapi-instrumentator (>=7.1.0,<8.0.0)"
+    "prometheus-fastapi-instrumentator (>=7.1.0,<8.0.0)",
+    "pytest (>=8.0.0,<9.0.0)"
 ]
 
 [build-system]

@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-02-16T23:29:36.358030+00:00",
+      "knowledge_base_id": "kb-demo",
+      "snapshot_id": "kb-demo-2026-02-16-013",
+      "reference_version": "v1",
+      "mode": "deterministic",
+      "issues_total": 14,
+      "questions": 5
+    },
+    {
+      "timestamp": "2026-02-16T23:42:35.417950+00:00",
+      "knowledge_base_id": "kb-demo",
+      "snapshot_id": "kb-demo-2026-02-16-013",
+      "reference_version": "v1",
+      "mode": "deterministic_and_ai",
+      "issues_total": 14,
+      "questions": 5
+    }
+  ]
+}

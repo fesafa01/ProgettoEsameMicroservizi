@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "id": "it-001",
+      "name": "Access Control Standard",
+      "domain": "policy",
+      "facts": [
+        "MFA required for admin access",
+        "Access reviews every 90 days"
+      ],
+      "reliability": 0.9,
+      "source": "security_standard_2024",
+      "updated_at": "2024-11-30"
+    },
+    {
+      "id": "it-002",
+      "name": "Incident Escalation Matrix",
+      "domain": "procedure",
+      "facts": [
+        "Severity 1 incidents escalated within 15 minutes",
+        "Notify CISO within 1 hour"
+      ],
+      "reliability": 0.85,
+      "source": "incident_response_v5",
+      "updated_at": "2025-05-22"
+    },
+    {
+      "id": "it-003",
+      "name": "Legacy VPN Guidance",
+      "domain": "policy",
+      "facts": [
+        "Legacy VPN is deprecated and will be removed",
+        "Use Zero Trust access instead"
+      ],
+      "reliability": 0.6,
+      "source": "network_memo_2019",
+      "updated_at": "2019-07-01"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-02-16T23:42:35.374362Z",
+  "knowledge_base_id": "kb-demo",
+  "snapshot_id": "kb-demo-2026-02-16-013",
+  "reference_version": "v1",
+  "mode": "deterministic_and_ai",
+  "summary": {
+    "total_entities": 2,
+    "issues_total": 14,
+    "duplicate_name_issues": 1,
+    "obsolete_issues": 2,
+    "low_reliability_issues": 2,
+    "missing_provenance_issues": 2,
+    "missing_domain_issues": 1,
+    "prohibited_term_issues": 1,
+    "conflicting_fact_issues": 2,
+    "relationship_cycle_issues": 1,
+    "missing_required_domain_issues": 1,
+    "questions": 5
+  },
+  "issues": [
+    {
+      "code": "OBSOLETE_ENTITY",
+      "severity": "medium",
+      "message": "Entity 'Data Retention Policy' is obsolete: updated_at=2021-01-01 is older than min_valid_date=2024-01-01.",
+      "entity_id": "ent-120",
+      "relation_ref": null,
+      "details": {
+        "updated_at": "2021-01-01",
+        "min_valid_date": "2024-01-01"
+      },
+      "suggested_action": "Refresh this entity from a newer document."
+    },
+    {
+      "code": "LOW_RELIABILITY",
+      "severity": "medium",
+      "message": "Entity 'Data Retention Policy' reliability 0.40 is below threshold 0.70.",
+      "entity_id": "ent-120",
+      "relation_ref": null,
+      "details": {
+        "reliability": 0.4,
+        "min_reliability": 0.7
+      },
+      "suggested_action": "Increase confidence by linking stronger evidence."
+    },
+    {
+      "code": "MISSING_PROVENANCE",
+      "severity": "high",
+      "message": "Entity 'Data Retention Policy' has no provenance.",
+      "entity_id": "ent-120",
+      "relation_ref": null,
+      "details": null,
+      "suggested_action": "Attach one or more source document IDs to provenance."
+    },
+    {
+      "code": "FORBIDDEN_STATUS",
+      "severity": "medium",
+      "message": "Entity 'Data Retention Policy' uses forbidden status 'deprecated'.",
+      "entity_id": "ent-120",
+      "relation_ref": null,
+      "details": null,
+      "suggested_action": "Use an allowed status value for active knowledge."
+    },
+    {
+      "code": "PROHIBITED_TERM",
+      "severity": "high",
+      "message": "Entity 'Data Retention Policy' contains prohibited term 'obsolete'.",
+      "entity_id": "ent-120",
+      "relation_ref": null,
+      "details": {
+        "term": "obsolete"
+      },
+      "suggested_action": "Remove or replace prohibited language."
+    },
+    {
+      "code": "CONFLICTING_FACTS",
+      "severity": "high",
+      "message": "Entity 'Data Retention Policy' has conflicting month values in facts.",
+      "entity_id": "ent-120",
+      "relation_ref": null,
+      "details": {
+        "month_values": [
+          12,
+          24
+        ]
+      },
+      "suggested_action": "Keep one canonical fact and archive obsolete statements."
+    },
+    {
+      "code": "MISSING_DOMAIN",
+      "severity": "high",
+      "message": "Entity 'Data Retention Policy' has no domain.",
+      "entity_id": "ent-121",
+      "relation_ref": null,
+      "details": null,
+      "suggested_action": "Set the entity domain to a valid taxonomy value."
+    },
+    {
+      "code": "OBSOLETE_ENTITY",
+      "severity": "medium",
+      "message": "Entity 'Data Retention Policy' is obsolete: updated_at=2020-01-01 is older than min_valid_date=2024-01-01.",
+      "entity_id": "ent-121",
+      "relation_ref": null,
+      "details": {
+        "updated_at": "2020-01-01",
+        "min_valid_date": "2024-01-01"
+      },
+      "suggested_action": "Refresh this entity from a newer document."
+    },
+    {
+      "code": "LOW_RELIABILITY",
+      "severity": "medium",
+      "message": "Entity 'Data Retention Policy' reliability 0.50 is below threshold 0.70.",
+      "entity_id": "ent-121",
+      "relation_ref": null,
+      "details": {
+        "reliability": 0.5,
+        "min_reliability": 0.7
+      },
+      "suggested_action": "Increase confidence by linking stronger evidence."
+    },
+    {
+      "code": "UNKNOWN_PROVENANCE_SOURCE",
+      "severity": "high",
+      "message": "Entity 'Data Retention Policy' references unknown source docs.",
+      "entity_id": "ent-121",
+      "relation_ref": null,
+      "details": {
+        "unknown_sources": [
+          "doc-x"
+        ]
+      },
+      "suggested_action": "Add missing source_docs metadata or fix provenance IDs."
+    },
+    {
+      "code": "DUPLICATE_ENTITY_NAME",
+      "severity": "high",
+      "message": "Duplicate entity name 'data retention policy' appears with multiple IDs.",
+      "entity_id": null,
+      "relation_ref": null,
+      "details": {
+        "entity_ids": [
+          "ent-120",
+          "ent-121"
+        ]
+      },
+      "suggested_action": "Merge duplicates or rename entities clearly."
+    },
+    {
+      "code": "CONFLICTING_FACTS",
+      "severity": "high",
+      "message": "Conflicting retention values found for 'data retention policy'.",
+      "entity_id": null,
+      "relation_ref": null,
+      "details": {
+        "month_values": [
+          12,
+          24,
+          36
+        ]
+      },
+      "suggested_action": "Define one authoritative value and deprecate the rest."
+    },
+    {
+      "code": "MISSING_REQUIRED_DOMAIN",
+      "severity": "high",
+      "message": "Required domain 'procedure' is missing.",
+      "entity_id": null,
+      "relation_ref": null,
+      "details": {
+        "required_domain": "procedure"
+      },
+      "suggested_action": "Add at least one entity for each required domain."
+    },
+    {
+      "code": "RELATIONSHIP_CYCLE",
+      "severity": "high",
+      "message": "Cyclic relationship detected between 'ent-120' and 'ent-121'.",
+      "entity_id": null,
+      "relation_ref": "ent-120->ent-121",
+      "details": null,
+      "suggested_action": "Break the cycle by removing or changing one dependency."
+    }
+  ],
+  "clarification_questions": [
+    "Le entita con reliability bassa possono essere confermate con fonti aggiuntive?",
+    "Puoi indicare il documento sorgente per le entita senza provenance?",
+    "Qual e il valore corretto tra i fatti in conflitto e quale documento lo conferma?",
+    "Quale fonte copre i domini richiesti ma assenti nello snapshot?",
+    "La dipendenza ciclica e intenzionale oppure uno dei due legami va corretto?"
+  ],
+  "ai_report": "**Validation Report**\n\n### Coherence/Alignment Summary\nThe knowledge base has some inconsistencies with the reference policies. The entities and relations are mostly well-structured, but there are issues with data retention policy entities that do not align with the reference policies.\n\n### Inconsistencies/Duplicates/Obsolete Info\n1. **Inconsistent Retention Periods**: Entity \"ent-120\" has multiple conflicting facts about data retention periods (12 months, 24 months), and one of the facts is marked as obsolete. Entity \"ent-121\" has a different retention period (36 months).\n2. **Duplicate Entity Names**: Entities \"ent-120\" and \"ent-121\" have the same name (\"Data Retention Policy\") but different domains and facts.\n3. **Low Reliability**: Entity \"ent-120\" has a reliability score of 0.4, which is below the minimum required reliability of 0.7.\n4. **Missing Provenance**: Entity \"ent-120\" does not have any provenance information, which is required by the reference policies.\n5. **Deprecated Status**: Entity \"ent-120\" has a status of \"deprecated\", which is forbidden by the reference policies.\n6. **Obsolete Term**: Entity \"ent-120\" contains the term \"obsolete\", which is prohibited by the reference policies.\n7. **Invalid Domain**: Entity \"ent-121\" has a null domain, which is not one of the required domains (\"policy\", \"procedure\").\n\n### Clarification Questions\n1. What is the correct data retention period, and how should the conflicting facts in entity \"ent-120\" be resolved?\n2. Should entities \"ent-120\" and \"ent-121\" be merged or kept separate, and how should their differences be reconciled?\n3. Can the reliability score of entity \"ent-120\" be improved, and if so, how?\n4. Can provenance information be added to entity \"ent-120\" to meet the reference policy requirements?\n5. Should entity \"ent-120\" be updated to remove the deprecated status and obsolete term, and if so, how?"
+}

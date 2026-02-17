@@ -1,0 +1,28 @@
+{
+  "entities": [
+    {
+      "id": "hr-001",
+      "name": "Onboarding Checklist",
+      "domain": "procedure",
+      "facts": [
+        "Complete security training within 7 days",
+        "Assign a buddy for the first 30 days"
+      ],
+      "reliability": 0.81,
+      "source": "hr_handbook",
+      "updated_at": "2024-02-05"
+    },
+    {
+      "id": "hr-002",
+      "name": "Remote Work Policy",
+      "domain": "policy",
+      "facts": [
+        "Remote work allowed up to 3 days per week",
+        "Approval required for cross-border work"
+      ],
+      "reliability": 0.72,
+      "source": "remote_work_policy",
+      "updated_at": "2025-01-10"
+    }
+  ]
+}

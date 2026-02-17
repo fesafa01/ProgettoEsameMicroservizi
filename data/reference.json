@@ -1,0 +1,16 @@
+{
+  "min_valid_date": "2024-01-01",
+  "min_reliability": 0.7,
+  "required_domains": [
+    "policy",
+    "procedure"
+  ],
+  "prohibited_terms": [
+    "deprecated",
+    "obsolete"
+  ],
+  "forbidden_statuses": [
+    "deprecated"
+  ],
+  "require_provenance": true
+}

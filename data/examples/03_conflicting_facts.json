@@ -1,0 +1,65 @@
+{
+  "knowledge_base_id": "kb-demo",
+  "snapshot_id": "kb-demo-2026-02-16-003",
+  "reference_version": "v1",
+  "created_at": "2026-02-16T09:20:00",
+  "source_docs": [
+    {
+      "id": "doc-1",
+      "title": "Policy Manual v2",
+      "date": "2025-06-10",
+      "version": "2.0"
+    },
+    {
+      "id": "doc-2",
+      "title": "Security Runbook",
+      "date": "2025-03-20",
+      "version": "1.8"
+    }
+  ],
+  "entities": [
+    {
+      "id": "ent-020",
+      "name": "Data Retention Policy",
+      "domain": "policy",
+      "facts": [
+        "Retention is 12 months"
+      ],
+      "reliability": 0.88,
+      "provenance": [
+        "doc-1"
+      ],
+      "updated_at": "2025-06-10",
+      "status": "active"
+    },
+    {
+      "id": "ent-021",
+      "name": "Data Retention Policy",
+      "domain": "policy",
+      "facts": [
+        "Retention is 24 months"
+      ],
+      "reliability": 0.88,
+      "provenance": [
+        "doc-1"
+      ],
+      "updated_at": "2025-06-10",
+      "status": "active"
+    },
+    {
+      "id": "ent-022",
+      "name": "Incident Response Procedure",
+      "domain": "procedure",
+      "facts": [
+        "Notify DPO within 72 hours"
+      ],
+      "reliability": 0.82,
+      "provenance": [
+        "doc-2"
+      ],
+      "updated_at": "2025-03-20",
+      "status": "active"
+    }
+  ],
+  "relations": []
+}
